@@ -1,0 +1,32 @@
+<head>
+  <title>hashchat</title>
+</head>
+
+<body>
+	<div class="container-fluid">
+		{{> display}}
+	</div>
+</body>
+
+<template name="display">
+	{{#each findAll 'tweets'}}
+		{{> tweet}}
+	{{/each}}
+</template>
+
+<template name="tweet">
+	<div class="row">
+		<div class="tweet col-sm-12">
+			<div class="actions pull-left">
+				<button class="train-good btn btn-lg btn-success">Okay</button>
+				<button class="train-bad btn btn-lg btn-danger">Wrong</button>
+				<button class="train-remove btn btn-lg btn-default hidden">Ignore</button>
+			</div>
+			{{{flaggedText}}}
+		</div>
+	</div>
+</template>
+
+<template name="twitter">
+	<a href="https://twitter.com/bobbigmac" class="twitter-follow-button" data-show-count="false">Follow @bobbigmac</a>
+</template>
