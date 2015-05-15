@@ -7,3 +7,6 @@ Pokes around the twitter firehose stream for usage of their, there, they're, you
 Demo site doesn't work (and I should sleep instead of fixing it), probably can't install "pos" tagger npm package on galaxy.
 
 Clone/fork and run locally simply with meteor.
+
+You might need to install this manually: https://www.npmjs.com/package/pos
+I forget, it's been a while :)
